@@ -1,0 +1,20 @@
+# ROS build artifacts
+build/
+devel/
+install/
+*.pyc
+*.pyo
+logs/*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Temp / OS
+*.bak
+*.swp
+*.deb
+__pycache__/
+
+# User-specific
+*.pt
