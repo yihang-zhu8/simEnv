@@ -1,0 +1,27 @@
+<<<<<<< HEAD
+set(CMAKE_HOST_SYSTEM "Linux-5.15.0-139-generic")
+set(CMAKE_HOST_SYSTEM_NAME "Linux")
+set(CMAKE_HOST_SYSTEM_VERSION "5.15.0-139-generic")
+=======
+set(CMAKE_HOST_SYSTEM "Linux-6.18.33.2-microsoft-standard-WSL2")
+set(CMAKE_HOST_SYSTEM_NAME "Linux")
+set(CMAKE_HOST_SYSTEM_VERSION "6.18.33.2-microsoft-standard-WSL2")
+>>>>>>> 9111f203e660e21b878434372b95dfe7792b118e
+set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
+
+
+
+<<<<<<< HEAD
+set(CMAKE_SYSTEM "Linux-5.15.0-139-generic")
+set(CMAKE_SYSTEM_NAME "Linux")
+set(CMAKE_SYSTEM_VERSION "5.15.0-139-generic")
+=======
+set(CMAKE_SYSTEM "Linux-6.18.33.2-microsoft-standard-WSL2")
+set(CMAKE_SYSTEM_NAME "Linux")
+set(CMAKE_SYSTEM_VERSION "6.18.33.2-microsoft-standard-WSL2")
+>>>>>>> 9111f203e660e21b878434372b95dfe7792b118e
+set(CMAKE_SYSTEM_PROCESSOR "x86_64")
+
+set(CMAKE_CROSSCOMPILING "FALSE")
+
+set(CMAKE_SYSTEM_LOADED 1)
