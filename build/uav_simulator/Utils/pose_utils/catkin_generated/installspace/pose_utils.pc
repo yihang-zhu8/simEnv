@@ -1,4 +1,4 @@
-prefix=/home/zhuyihang/SimEnv/install
+prefix=/home/zhuyihang/simEnv/install
 
 Name: pose_utils
 Description: Description of pose_utils

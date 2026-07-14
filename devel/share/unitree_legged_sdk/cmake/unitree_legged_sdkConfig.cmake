@@ -67,14 +67,14 @@ set(unitree_legged_sdk_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(unitree_legged_sdk_SOURCE_PREFIX /home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_sdk)
-  set(unitree_legged_sdk_DEVEL_PREFIX /home/zhuyihang/SimEnv/devel)
+  set(unitree_legged_sdk_SOURCE_PREFIX /home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_sdk)
+  set(unitree_legged_sdk_DEVEL_PREFIX /home/zhuyihang/simEnv/devel)
   set(unitree_legged_sdk_INSTALL_PREFIX "")
   set(unitree_legged_sdk_PREFIX ${unitree_legged_sdk_DEVEL_PREFIX})
 else()
   set(unitree_legged_sdk_SOURCE_PREFIX "")
   set(unitree_legged_sdk_DEVEL_PREFIX "")
-  set(unitree_legged_sdk_INSTALL_PREFIX /home/zhuyihang/SimEnv/install)
+  set(unitree_legged_sdk_INSTALL_PREFIX /home/zhuyihang/simEnv/install)
   set(unitree_legged_sdk_PREFIX ${unitree_legged_sdk_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(unitree_legged_sdk_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_sdk/include " STREQUAL " ")
+if(NOT "/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_sdk/include " STREQUAL " ")
   set(unitree_legged_sdk_INCLUDE_DIRS "")
-  set(_include_dirs "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_sdk/include")
+  set(_include_dirs "/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_sdk/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,13 +110,13 @@ if(NOT "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_leg
         message(FATAL_ERROR "Project 'unitree_legged_sdk' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'unitree_legged_sdk' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_sdk/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'unitree_legged_sdk' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_sdk/${idir}'.  ${_report}")
     endif()
     _list_append_unique(unitree_legged_sdk_INCLUDE_DIRS ${include})
   endforeach()
 endif()
 
-set(libraries "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_sdk/lib/cpp/amd64/libunitree_legged_sdk.a")
+set(libraries "/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_sdk/lib/cpp/amd64/libunitree_legged_sdk.a")
 foreach(library ${libraries})
   # keep build configuration keywords, generator expressions, target names, and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zhuyihang/SimEnv/devel/lib;/home/zhuyihang/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/zhuyihang/simEnv/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

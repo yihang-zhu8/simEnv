@@ -1,4 +1,4 @@
-prefix=/home/zhuyihang/SimEnv/install
+prefix=/home/zhuyihang/simEnv/install
 
 Name: mockamap
 Description: Description of mockamap

@@ -1,0 +1,12 @@
+<launch>
+  <arg name="max_time" default="600" doc="最大探索时间 (秒)"/>
+  <arg name="output" default="results/detected_danger.json" doc="结果文件路径"/>
+  <arg name="no_nn" default="false" doc="使用规则策略"/>
+
+  <node name="simenv_deploy" pkg="simenv_train" type="deploy.py"
+        output="screen" required="true">
+    <param name="max_time" value="$(arg max_time)"/>
+    <param name="output" value="$(arg output)"/>
+    <param name="no_nn" value="$(arg no_nn)"/>
+  </node>
+</launch>

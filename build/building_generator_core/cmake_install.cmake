@@ -1,8 +1,8 @@
-# Install script for directory: /home/zhuyihang/SimEnv/src/building_generator_core
+# Install script for directory: /home/zhuyihang/simEnv/src/building_generator_core
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zhuyihang/SimEnv/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zhuyihang/simEnv/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,26 +37,31 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/zhuyihang/SimEnv/build/building_generator_core/catkin_generated/safe_execute_install.cmake")
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zhuyihang/SimEnv/build/building_generator_core/catkin_generated/installspace/building_generator_core.pc")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  include("/home/zhuyihang/simEnv/build/building_generator_core/catkin_generated/safe_execute_install.cmake")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zhuyihang/simEnv/build/building_generator_core/catkin_generated/installspace/building_generator_core.pc")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/building_generator_core/cmake" TYPE FILE FILES
-    "/home/zhuyihang/SimEnv/build/building_generator_core/catkin_generated/installspace/building_generator_coreConfig.cmake"
-    "/home/zhuyihang/SimEnv/build/building_generator_core/catkin_generated/installspace/building_generator_coreConfig-version.cmake"
+    "/home/zhuyihang/simEnv/build/building_generator_core/catkin_generated/installspace/building_generator_coreConfig.cmake"
+    "/home/zhuyihang/simEnv/build/building_generator_core/catkin_generated/installspace/building_generator_coreConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/building_generator_core" TYPE FILE FILES "/home/zhuyihang/SimEnv/src/building_generator_core/package.xml")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/building_generator_core" TYPE FILE FILES "/home/zhuyihang/simEnv/src/building_generator_core/package.xml")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/building_generator_core" TYPE PROGRAM FILES "/home/zhuyihang/SimEnv/build/building_generator_core/catkin_generated/installspace/building_generator_cli")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/building_generator_core" TYPE PROGRAM FILES "/home/zhuyihang/simEnv/build/building_generator_core/catkin_generated/installspace/building_generator_cli")
 endif()
 

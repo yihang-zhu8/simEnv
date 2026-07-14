@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/zhuyihang/SimEnv/devel/lib/libquadrotor_dynamics.pdb"
-  "/home/zhuyihang/SimEnv/devel/lib/libquadrotor_dynamics.so"
+  "/home/zhuyihang/simEnv/devel/lib/libquadrotor_dynamics.pdb"
+  "/home/zhuyihang/simEnv/devel/lib/libquadrotor_dynamics.so"
   "CMakeFiles/quadrotor_dynamics.dir/src/dynamics/Quadrotor.cpp.o"
+  "CMakeFiles/quadrotor_dynamics.dir/src/dynamics/Quadrotor.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

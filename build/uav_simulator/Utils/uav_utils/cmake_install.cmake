@@ -1,8 +1,8 @@
-# Install script for directory: /home/zhuyihang/SimEnv/src/uav_simulator/Utils/uav_utils
+# Install script for directory: /home/zhuyihang/simEnv/src/uav_simulator/Utils/uav_utils
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zhuyihang/SimEnv/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zhuyihang/simEnv/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,22 +37,27 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zhuyihang/SimEnv/build/uav_simulator/Utils/uav_utils/catkin_generated/installspace/uav_utils.pc")
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zhuyihang/simEnv/build/uav_simulator/Utils/uav_utils/catkin_generated/installspace/uav_utils.pc")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_utils/cmake" TYPE FILE FILES
-    "/home/zhuyihang/SimEnv/build/uav_simulator/Utils/uav_utils/catkin_generated/installspace/uav_utilsConfig.cmake"
-    "/home/zhuyihang/SimEnv/build/uav_simulator/Utils/uav_utils/catkin_generated/installspace/uav_utilsConfig-version.cmake"
+    "/home/zhuyihang/simEnv/build/uav_simulator/Utils/uav_utils/catkin_generated/installspace/uav_utilsConfig.cmake"
+    "/home/zhuyihang/simEnv/build/uav_simulator/Utils/uav_utils/catkin_generated/installspace/uav_utilsConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_utils" TYPE FILE FILES "/home/zhuyihang/SimEnv/src/uav_simulator/Utils/uav_utils/package.xml")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/uav_utils" TYPE FILE FILES "/home/zhuyihang/simEnv/src/uav_simulator/Utils/uav_utils/package.xml")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/uav_utils" TYPE DIRECTORY FILES "/home/zhuyihang/SimEnv/src/uav_simulator/Utils/uav_utils/include/uav_utils/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\.svn$" EXCLUDE)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/uav_utils" TYPE DIRECTORY FILES "/home/zhuyihang/simEnv/src/uav_simulator/Utils/uav_utils/include/uav_utils/" FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/\\.svn$" EXCLUDE)
 endif()
 

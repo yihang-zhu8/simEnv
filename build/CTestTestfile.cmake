@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/zhuyihang/SimEnv/src
-# Build directory: /home/zhuyihang/SimEnv/build
+# Source directory: /home/zhuyihang/simEnv/src
+# Build directory: /home/zhuyihang/simEnv/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
@@ -14,6 +14,8 @@ subdirs("uav_simulator/Utils/cmake_utils")
 subdirs("uav_simulator/map_generator")
 subdirs("uav_simulator/Utils/pose_utils")
 subdirs("building_obstacles")
+subdirs("simenv_cbf_train")
+subdirs("simenv_train")
 subdirs("building_generator_classic")
 subdirs("Mid360_imu_sim")
 subdirs("uav_simulator/Utils/odom_visualization")

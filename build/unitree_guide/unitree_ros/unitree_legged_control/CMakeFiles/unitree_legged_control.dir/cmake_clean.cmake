@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
-  "/home/zhuyihang/SimEnv/devel/lib/libunitree_legged_control.pdb"
-  "/home/zhuyihang/SimEnv/devel/lib/libunitree_legged_control.so"
+  "/home/zhuyihang/simEnv/devel/lib/libunitree_legged_control.pdb"
+  "/home/zhuyihang/simEnv/devel/lib/libunitree_legged_control.so"
   "CMakeFiles/unitree_legged_control.dir/src/joint_controller.cpp.o"
+  "CMakeFiles/unitree_legged_control.dir/src/joint_controller.cpp.o.d"
   "CMakeFiles/unitree_legged_control.dir/src/unitree_joint_control_tool.cpp.o"
+  "CMakeFiles/unitree_legged_control.dir/src/unitree_joint_control_tool.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

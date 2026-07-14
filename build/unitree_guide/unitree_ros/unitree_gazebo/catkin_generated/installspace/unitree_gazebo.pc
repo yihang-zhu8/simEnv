@@ -1,4 +1,4 @@
-prefix=/home/zhuyihang/SimEnv/install
+prefix=/home/zhuyihang/simEnv/install
 
 Name: unitree_gazebo
 Description: Description of unitree_gazebo

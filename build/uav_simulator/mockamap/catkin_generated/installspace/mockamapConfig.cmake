@@ -67,14 +67,14 @@ set(mockamap_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(mockamap_SOURCE_PREFIX /home/zhuyihang/SimEnv/src/uav_simulator/mockamap)
-  set(mockamap_DEVEL_PREFIX /home/zhuyihang/SimEnv/devel)
+  set(mockamap_SOURCE_PREFIX /home/zhuyihang/simEnv/src/uav_simulator/mockamap)
+  set(mockamap_DEVEL_PREFIX /home/zhuyihang/simEnv/devel)
   set(mockamap_INSTALL_PREFIX "")
   set(mockamap_PREFIX ${mockamap_DEVEL_PREFIX})
 else()
   set(mockamap_SOURCE_PREFIX "")
   set(mockamap_DEVEL_PREFIX "")
-  set(mockamap_INSTALL_PREFIX /home/zhuyihang/SimEnv/install)
+  set(mockamap_INSTALL_PREFIX /home/zhuyihang/simEnv/install)
   set(mockamap_PREFIX ${mockamap_INSTALL_PREFIX})
 endif()
 
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zhuyihang/SimEnv/install/lib;/home/zhuyihang/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/zhuyihang/simEnv/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

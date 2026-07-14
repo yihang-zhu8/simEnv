@@ -1,8 +1,8 @@
-# Install script for directory: /home/zhuyihang/SimEnv/src/unitree_guide/unitree_guide/unitree_guide
+# Install script for directory: /home/zhuyihang/simEnv/src/unitree_guide/unitree_guide/unitree_guide
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zhuyihang/SimEnv/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zhuyihang/simEnv/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,73 +37,74 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_guide/msg" TYPE FILE FILES
-    "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_guide/unitree_guide/msg/CustomPoint.msg"
-    "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_guide/unitree_guide/msg/CustomMsg.msg"
+    "/home/zhuyihang/simEnv/src/unitree_guide/unitree_guide/unitree_guide/msg/CustomPoint.msg"
+    "/home/zhuyihang/simEnv/src/unitree_guide/unitree_guide/unitree_guide/msg/CustomMsg.msg"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_guide/cmake" TYPE FILE FILES "/home/zhuyihang/SimEnv/build/unitree_guide/unitree_guide/unitree_guide/catkin_generated/installspace/unitree_guide-msg-paths.cmake")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_guide/cmake" TYPE FILE FILES "/home/zhuyihang/simEnv/build/unitree_guide/unitree_guide/unitree_guide/catkin_generated/installspace/unitree_guide-msg-paths.cmake")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/zhuyihang/SimEnv/devel/include/unitree_guide")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/zhuyihang/simEnv/devel/include/unitree_guide")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/zhuyihang/SimEnv/devel/share/roseus/ros/unitree_guide")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/zhuyihang/simEnv/devel/share/roseus/ros/unitree_guide")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/zhuyihang/SimEnv/devel/share/common-lisp/ros/unitree_guide")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/zhuyihang/simEnv/devel/share/common-lisp/ros/unitree_guide")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/zhuyihang/SimEnv/devel/share/gennodejs/ros/unitree_guide")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/zhuyihang/simEnv/devel/share/gennodejs/ros/unitree_guide")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/zhuyihang/SimEnv/devel/lib/python3/dist-packages/unitree_guide")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/zhuyihang/simEnv/devel/lib/python3/dist-packages/unitree_guide")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/zhuyihang/SimEnv/devel/lib/python3/dist-packages/unitree_guide")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/zhuyihang/simEnv/devel/lib/python3/dist-packages/unitree_guide")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zhuyihang/SimEnv/build/unitree_guide/unitree_guide/unitree_guide/catkin_generated/installspace/unitree_guide.pc")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zhuyihang/simEnv/build/unitree_guide/unitree_guide/unitree_guide/catkin_generated/installspace/unitree_guide.pc")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_guide/cmake" TYPE FILE FILES "/home/zhuyihang/SimEnv/build/unitree_guide/unitree_guide/unitree_guide/catkin_generated/installspace/unitree_guide-msg-extras.cmake")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_guide/cmake" TYPE FILE FILES "/home/zhuyihang/simEnv/build/unitree_guide/unitree_guide/unitree_guide/catkin_generated/installspace/unitree_guide-msg-extras.cmake")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_guide/cmake" TYPE FILE FILES
-    "/home/zhuyihang/SimEnv/build/unitree_guide/unitree_guide/unitree_guide/catkin_generated/installspace/unitree_guideConfig.cmake"
-    "/home/zhuyihang/SimEnv/build/unitree_guide/unitree_guide/unitree_guide/catkin_generated/installspace/unitree_guideConfig-version.cmake"
+    "/home/zhuyihang/simEnv/build/unitree_guide/unitree_guide/unitree_guide/catkin_generated/installspace/unitree_guideConfig.cmake"
+    "/home/zhuyihang/simEnv/build/unitree_guide/unitree_guide/unitree_guide/catkin_generated/installspace/unitree_guideConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_guide" TYPE FILE FILES "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_guide/unitree_guide/package.xml")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_guide" TYPE FILE FILES "/home/zhuyihang/simEnv/src/unitree_guide/unitree_guide/unitree_guide/package.xml")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/unitree_guide" TYPE PROGRAM FILES "/home/zhuyihang/SimEnv/build/unitree_guide/unitree_guide/unitree_guide/catkin_generated/installspace/virtual_joy.py")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/unitree_guide" TYPE PROGRAM FILES "/home/zhuyihang/simEnv/build/unitree_guide/unitree_guide/unitree_guide/catkin_generated/installspace/virtual_joy.py")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-<<<<<<< HEAD
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/unitree_guide" TYPE PROGRAM FILES "/home/zhuyihang/SimEnv/build/unitree_guide/unitree_guide/unitree_guide/catkin_generated/installspace/pointcloud2livox.py")
-=======
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/unitree_guide" TYPE PROGRAM FILES "/home/ros/Guoyulun/Competition/SimEnv/build/unitree_guide/unitree_guide/unitree_guide/catkin_generated/installspace/keyboard_teleop.py")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/unitree_guide" TYPE PROGRAM FILES "/home/zhuyihang/simEnv/build/unitree_guide/unitree_guide/unitree_guide/catkin_generated/installspace/keyboard_teleop.py")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/unitree_guide" TYPE PROGRAM FILES "/home/ros/Guoyulun/Competition/SimEnv/build/unitree_guide/unitree_guide/unitree_guide/catkin_generated/installspace/pointcloud2livox.py")
->>>>>>> 9111f203e660e21b878434372b95dfe7792b118e
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/unitree_guide" TYPE PROGRAM FILES "/home/zhuyihang/simEnv/build/unitree_guide/unitree_guide/unitree_guide/catkin_generated/installspace/pointcloud2livox.py")
 endif()
 

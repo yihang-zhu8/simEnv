@@ -1,0 +1,14 @@
+<launch>
+  <arg name="max_iterations" default="500"/>
+  <arg name="device" default="cpu"/>
+  <arg name="resume" default=""/>
+  <arg name="fast" default="false"/>
+
+  <node name="simenv_train_nav" pkg="simenv_train" type="train_nav.py"
+        output="screen" required="true">
+    <param name="max_iterations" value="$(arg max_iterations)"/>
+    <param name="device" value="$(arg device)"/>
+    <param name="resume" value="$(arg resume)"/>
+    <param name="fast" value="$(arg fast)"/>
+  </node>
+</launch>

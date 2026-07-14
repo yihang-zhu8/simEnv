@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/zhuyihang/SimEnv/devel/lib/waypoint_generator/waypoint_generator"
-  "/home/zhuyihang/SimEnv/devel/lib/waypoint_generator/waypoint_generator.pdb"
+  "/home/zhuyihang/simEnv/devel/lib/waypoint_generator/waypoint_generator"
+  "/home/zhuyihang/simEnv/devel/lib/waypoint_generator/waypoint_generator.pdb"
   "CMakeFiles/waypoint_generator.dir/src/waypoint_generator.cpp.o"
+  "CMakeFiles/waypoint_generator.dir/src/waypoint_generator.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

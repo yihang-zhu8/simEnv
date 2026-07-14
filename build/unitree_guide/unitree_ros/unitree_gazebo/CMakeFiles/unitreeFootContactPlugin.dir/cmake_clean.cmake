@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/zhuyihang/SimEnv/devel/lib/libunitreeFootContactPlugin.pdb"
-  "/home/zhuyihang/SimEnv/devel/lib/libunitreeFootContactPlugin.so"
+  "/home/zhuyihang/simEnv/devel/lib/libunitreeFootContactPlugin.pdb"
+  "/home/zhuyihang/simEnv/devel/lib/libunitreeFootContactPlugin.so"
   "CMakeFiles/unitreeFootContactPlugin.dir/plugin/foot_contact_plugin.cc.o"
+  "CMakeFiles/unitreeFootContactPlugin.dir/plugin/foot_contact_plugin.cc.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

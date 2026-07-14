@@ -1,8 +1,8 @@
-prefix=/home/zhuyihang/SimEnv/devel
+prefix=/home/zhuyihang/simEnv/devel
 
 Name: uav_utils
 Description: Description of uav_utils
 Version: 0.0.0
-Cflags: -I/home/zhuyihang/SimEnv/src/uav_simulator/Utils/uav_utils/include
+Cflags: -I/home/zhuyihang/simEnv/src/uav_simulator/Utils/uav_utils/include
 Libs: -L${prefix}/lib 
 Requires: roscpp rospy

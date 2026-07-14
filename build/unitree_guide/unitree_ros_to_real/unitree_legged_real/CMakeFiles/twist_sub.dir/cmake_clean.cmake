@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/zhuyihang/SimEnv/devel/lib/unitree_legged_real/twist_sub"
-  "/home/zhuyihang/SimEnv/devel/lib/unitree_legged_real/twist_sub.pdb"
+  "/home/zhuyihang/simEnv/devel/lib/unitree_legged_real/twist_sub"
+  "/home/zhuyihang/simEnv/devel/lib/unitree_legged_real/twist_sub.pdb"
   "CMakeFiles/twist_sub.dir/src/exe/twist_sub.cpp.o"
+  "CMakeFiles/twist_sub.dir/src/exe/twist_sub.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

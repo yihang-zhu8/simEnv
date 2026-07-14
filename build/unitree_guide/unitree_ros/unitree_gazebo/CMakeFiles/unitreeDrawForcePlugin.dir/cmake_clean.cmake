@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/zhuyihang/SimEnv/devel/lib/libunitreeDrawForcePlugin.pdb"
-  "/home/zhuyihang/SimEnv/devel/lib/libunitreeDrawForcePlugin.so"
+  "/home/zhuyihang/simEnv/devel/lib/libunitreeDrawForcePlugin.pdb"
+  "/home/zhuyihang/simEnv/devel/lib/libunitreeDrawForcePlugin.so"
   "CMakeFiles/unitreeDrawForcePlugin.dir/plugin/draw_force_plugin.cc.o"
+  "CMakeFiles/unitreeDrawForcePlugin.dir/plugin/draw_force_plugin.cc.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

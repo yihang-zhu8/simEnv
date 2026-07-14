@@ -1,4 +1,4 @@
-prefix=/home/zhuyihang/SimEnv/devel
+prefix=/home/zhuyihang/simEnv/devel
 
 Name: map_generator
 Description: Description of map_generator

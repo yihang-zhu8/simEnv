@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zhuyihang/SimEnv/devel/share/gennodejs/ros/unitree_guide/msg/CustomMsg.js"
-  "/home/zhuyihang/SimEnv/devel/share/gennodejs/ros/unitree_guide/msg/CustomPoint.js"
+  "/home/zhuyihang/simEnv/devel/share/gennodejs/ros/unitree_guide/msg/CustomMsg.js"
+  "/home/zhuyihang/simEnv/devel/share/gennodejs/ros/unitree_guide/msg/CustomPoint.js"
   "CMakeFiles/unitree_guide_generate_messages_nodejs"
 )
 

@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/zhuyihang/SimEnv/devel/lib/unitree_guide/state_from_gazebo"
-  "/home/zhuyihang/SimEnv/devel/lib/unitree_guide/state_from_gazebo.pdb"
+  "/home/zhuyihang/simEnv/devel/lib/unitree_guide/state_from_gazebo"
+  "/home/zhuyihang/simEnv/devel/lib/unitree_guide/state_from_gazebo.pdb"
   "CMakeFiles/state_from_gazebo.dir/src/state_from_gazebo.cpp.o"
+  "CMakeFiles/state_from_gazebo.dir/src/state_from_gazebo.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

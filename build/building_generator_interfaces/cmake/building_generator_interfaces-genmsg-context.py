@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/zhuyihang/SimEnv/src/building_generator_interfaces/srv/CallElevator.srv;/home/zhuyihang/SimEnv/src/building_generator_interfaces/srv/SetDoorState.srv"
+services_str = "/home/zhuyihang/simEnv/src/building_generator_interfaces/srv/CallElevator.srv;/home/zhuyihang/simEnv/src/building_generator_interfaces/srv/SetDoorState.srv"
 pkg_name = "building_generator_interfaces"
 dependencies_str = ""
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

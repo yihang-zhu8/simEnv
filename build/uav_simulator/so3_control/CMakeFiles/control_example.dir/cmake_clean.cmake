@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/zhuyihang/SimEnv/devel/lib/so3_control/control_example"
-  "/home/zhuyihang/SimEnv/devel/lib/so3_control/control_example.pdb"
+  "/home/zhuyihang/simEnv/devel/lib/so3_control/control_example"
+  "/home/zhuyihang/simEnv/devel/lib/so3_control/control_example.pdb"
   "CMakeFiles/control_example.dir/src/control_example.cpp.o"
+  "CMakeFiles/control_example.dir/src/control_example.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

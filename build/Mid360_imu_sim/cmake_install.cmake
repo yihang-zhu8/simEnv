@@ -1,8 +1,8 @@
-# Install script for directory: /home/zhuyihang/SimEnv/src/Mid360_imu_sim
+# Install script for directory: /home/zhuyihang/simEnv/src/Mid360_imu_sim
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zhuyihang/SimEnv/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zhuyihang/simEnv/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,18 +37,23 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zhuyihang/SimEnv/build/Mid360_imu_sim/catkin_generated/installspace/livox_laser_simulation.pc")
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zhuyihang/simEnv/build/Mid360_imu_sim/catkin_generated/installspace/livox_laser_simulation.pc")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/livox_laser_simulation/cmake" TYPE FILE FILES
-    "/home/zhuyihang/SimEnv/build/Mid360_imu_sim/catkin_generated/installspace/livox_laser_simulationConfig.cmake"
-    "/home/zhuyihang/SimEnv/build/Mid360_imu_sim/catkin_generated/installspace/livox_laser_simulationConfig-version.cmake"
+    "/home/zhuyihang/simEnv/build/Mid360_imu_sim/catkin_generated/installspace/livox_laser_simulationConfig.cmake"
+    "/home/zhuyihang/simEnv/build/Mid360_imu_sim/catkin_generated/installspace/livox_laser_simulationConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/livox_laser_simulation" TYPE FILE FILES "/home/zhuyihang/SimEnv/src/Mid360_imu_sim/package.xml")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/livox_laser_simulation" TYPE FILE FILES "/home/zhuyihang/simEnv/src/Mid360_imu_sim/package.xml")
 endif()
 

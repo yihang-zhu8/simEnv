@@ -67,14 +67,14 @@ set(unitree_legged_control_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(unitree_legged_control_SOURCE_PREFIX /home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros/unitree_legged_control)
-  set(unitree_legged_control_DEVEL_PREFIX /home/zhuyihang/SimEnv/devel)
+  set(unitree_legged_control_SOURCE_PREFIX /home/zhuyihang/simEnv/src/unitree_guide/unitree_ros/unitree_legged_control)
+  set(unitree_legged_control_DEVEL_PREFIX /home/zhuyihang/simEnv/devel)
   set(unitree_legged_control_INSTALL_PREFIX "")
   set(unitree_legged_control_PREFIX ${unitree_legged_control_DEVEL_PREFIX})
 else()
   set(unitree_legged_control_SOURCE_PREFIX "")
   set(unitree_legged_control_DEVEL_PREFIX "")
-  set(unitree_legged_control_INSTALL_PREFIX /home/zhuyihang/SimEnv/install)
+  set(unitree_legged_control_INSTALL_PREFIX /home/zhuyihang/simEnv/install)
   set(unitree_legged_control_PREFIX ${unitree_legged_control_INSTALL_PREFIX})
 endif()
 
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/zhuyihang/SimEnv/install/lib;/home/zhuyihang/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/zhuyihang/simEnv/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -13,21 +13,21 @@ fi
 
 echo_and_run() { echo "+ $@" ; "$@" ; }
 
-echo_and_run cd "/home/zhuyihang/SimEnv/src/building_generator_core"
+echo_and_run cd "/home/zhuyihang/simEnv/src/building_generator_core"
 
 # ensure that Python install destination exists
-echo_and_run mkdir -p "$DESTDIR/home/zhuyihang/SimEnv/install/lib/python3/dist-packages"
+echo_and_run mkdir -p "$DESTDIR/home/zhuyihang/simEnv/install/lib/python3/dist-packages"
 
 # Note that PYTHONPATH is pulled from the environment to support installing
 # into one location when some dependencies were installed in another
 # location, #123.
 echo_and_run /usr/bin/env \
-    PYTHONPATH="/home/zhuyihang/SimEnv/install/lib/python3/dist-packages:/home/zhuyihang/SimEnv/build/lib/python3/dist-packages:$PYTHONPATH" \
-    CATKIN_BINARY_DIR="/home/zhuyihang/SimEnv/build" \
+    PYTHONPATH="/home/zhuyihang/simEnv/install/lib/python3/dist-packages:/home/zhuyihang/simEnv/build/lib/python3/dist-packages:$PYTHONPATH" \
+    CATKIN_BINARY_DIR="/home/zhuyihang/simEnv/build" \
     "/usr/bin/python3" \
-    "/home/zhuyihang/SimEnv/src/building_generator_core/setup.py" \
+    "/home/zhuyihang/simEnv/src/building_generator_core/setup.py" \
      \
-    build --build-base "/home/zhuyihang/SimEnv/build/building_generator_core" \
+    build --build-base "/home/zhuyihang/simEnv/build/building_generator_core" \
     install \
     --root="${DESTDIR-/}" \
-    --install-layout=deb --prefix="/home/zhuyihang/SimEnv/install" --install-scripts="/home/zhuyihang/SimEnv/install/bin"
+    --install-layout=deb --prefix="/home/zhuyihang/simEnv/install" --install-scripts="/home/zhuyihang/simEnv/install/bin"

@@ -1,4 +1,4 @@
-prefix=/home/zhuyihang/SimEnv/devel
+prefix=/home/zhuyihang/simEnv/devel
 
 Name: building_generator_classic
 Description: Description of building_generator_classic

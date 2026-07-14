@@ -1,4 +1,4 @@
-prefix=/home/zhuyihang/SimEnv/install
+prefix=/home/zhuyihang/simEnv/install
 
 Name: so3_quadrotor_simulator
 Description: Description of so3_quadrotor_simulator

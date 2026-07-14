@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/zhuyihang/SimEnv/devel/lib/libdecode_msgs.pdb"
-  "/home/zhuyihang/SimEnv/devel/lib/libdecode_msgs.so"
+  "/home/zhuyihang/simEnv/devel/lib/libdecode_msgs.pdb"
+  "/home/zhuyihang/simEnv/devel/lib/libdecode_msgs.so"
   "CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.o"
+  "CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

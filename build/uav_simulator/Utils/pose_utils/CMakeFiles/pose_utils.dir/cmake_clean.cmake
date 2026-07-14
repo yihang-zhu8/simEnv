@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/zhuyihang/SimEnv/devel/lib/libpose_utils.pdb"
-  "/home/zhuyihang/SimEnv/devel/lib/libpose_utils.so"
+  "/home/zhuyihang/simEnv/devel/lib/libpose_utils.pdb"
+  "/home/zhuyihang/simEnv/devel/lib/libpose_utils.so"
   "CMakeFiles/pose_utils.dir/src/pose_utils.cpp.o"
+  "CMakeFiles/pose_utils.dir/src/pose_utils.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

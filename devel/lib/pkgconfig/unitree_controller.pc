@@ -1,4 +1,4 @@
-prefix=/home/zhuyihang/SimEnv/devel
+prefix=/home/zhuyihang/simEnv/devel
 
 Name: unitree_controller
 Description: Description of unitree_controller

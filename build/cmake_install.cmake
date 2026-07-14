@@ -1,8 +1,8 @@
-# Install script for directory: /home/zhuyihang/SimEnv/src
+# Install script for directory: /home/zhuyihang/simEnv/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zhuyihang/SimEnv/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zhuyihang/simEnv/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,7 +37,12 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   
       if (NOT EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
         file(MAKE_DIRECTORY "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}")
@@ -47,133 +52,135 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zhuyihang/SimEnv/install/_setup_util.py")
+   "/home/zhuyihang/simEnv/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zhuyihang/SimEnv/install" TYPE PROGRAM FILES "/home/zhuyihang/SimEnv/build/catkin_generated/installspace/_setup_util.py")
+  file(INSTALL DESTINATION "/home/zhuyihang/simEnv/install" TYPE PROGRAM FILES "/home/zhuyihang/simEnv/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zhuyihang/SimEnv/install/env.sh")
+   "/home/zhuyihang/simEnv/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zhuyihang/SimEnv/install" TYPE PROGRAM FILES "/home/zhuyihang/SimEnv/build/catkin_generated/installspace/env.sh")
+  file(INSTALL DESTINATION "/home/zhuyihang/simEnv/install" TYPE PROGRAM FILES "/home/zhuyihang/simEnv/build/catkin_generated/installspace/env.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zhuyihang/SimEnv/install/setup.bash;/home/zhuyihang/SimEnv/install/local_setup.bash")
+   "/home/zhuyihang/simEnv/install/setup.bash;/home/zhuyihang/simEnv/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zhuyihang/SimEnv/install" TYPE FILE FILES
-    "/home/zhuyihang/SimEnv/build/catkin_generated/installspace/setup.bash"
-    "/home/zhuyihang/SimEnv/build/catkin_generated/installspace/local_setup.bash"
+  file(INSTALL DESTINATION "/home/zhuyihang/simEnv/install" TYPE FILE FILES
+    "/home/zhuyihang/simEnv/build/catkin_generated/installspace/setup.bash"
+    "/home/zhuyihang/simEnv/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zhuyihang/SimEnv/install/setup.sh;/home/zhuyihang/SimEnv/install/local_setup.sh")
+   "/home/zhuyihang/simEnv/install/setup.sh;/home/zhuyihang/simEnv/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zhuyihang/SimEnv/install" TYPE FILE FILES
-    "/home/zhuyihang/SimEnv/build/catkin_generated/installspace/setup.sh"
-    "/home/zhuyihang/SimEnv/build/catkin_generated/installspace/local_setup.sh"
+  file(INSTALL DESTINATION "/home/zhuyihang/simEnv/install" TYPE FILE FILES
+    "/home/zhuyihang/simEnv/build/catkin_generated/installspace/setup.sh"
+    "/home/zhuyihang/simEnv/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zhuyihang/SimEnv/install/setup.zsh;/home/zhuyihang/SimEnv/install/local_setup.zsh")
+   "/home/zhuyihang/simEnv/install/setup.zsh;/home/zhuyihang/simEnv/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zhuyihang/SimEnv/install" TYPE FILE FILES
-    "/home/zhuyihang/SimEnv/build/catkin_generated/installspace/setup.zsh"
-    "/home/zhuyihang/SimEnv/build/catkin_generated/installspace/local_setup.zsh"
+  file(INSTALL DESTINATION "/home/zhuyihang/simEnv/install" TYPE FILE FILES
+    "/home/zhuyihang/simEnv/build/catkin_generated/installspace/setup.zsh"
+    "/home/zhuyihang/simEnv/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zhuyihang/SimEnv/install/setup.fish;/home/zhuyihang/SimEnv/install/local_setup.fish")
+   "/home/zhuyihang/simEnv/install/setup.fish;/home/zhuyihang/simEnv/install/local_setup.fish")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zhuyihang/SimEnv/install" TYPE FILE FILES
-    "/home/zhuyihang/SimEnv/build/catkin_generated/installspace/setup.fish"
-    "/home/zhuyihang/SimEnv/build/catkin_generated/installspace/local_setup.fish"
+  file(INSTALL DESTINATION "/home/zhuyihang/simEnv/install" TYPE FILE FILES
+    "/home/zhuyihang/simEnv/build/catkin_generated/installspace/setup.fish"
+    "/home/zhuyihang/simEnv/build/catkin_generated/installspace/local_setup.fish"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/zhuyihang/SimEnv/install/.rosinstall")
+   "/home/zhuyihang/simEnv/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/zhuyihang/SimEnv/install" TYPE FILE FILES "/home/zhuyihang/SimEnv/build/catkin_generated/installspace/.rosinstall")
+  file(INSTALL DESTINATION "/home/zhuyihang/simEnv/install" TYPE FILE FILES "/home/zhuyihang/simEnv/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/zhuyihang/SimEnv/build/gtest/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/building_generator_core/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/building_generator_interfaces/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/uav_simulator/Utils/quadrotor_msgs/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/unitree_guide/unitree_ros_to_real/unitree_legged_sdk/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/unitree_guide/unitree_ros/robots/a1_description/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/uav_simulator/Utils/cmake_utils/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/uav_simulator/map_generator/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/uav_simulator/Utils/pose_utils/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/building_obstacles/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/building_generator_classic/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/Mid360_imu_sim/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/uav_simulator/Utils/odom_visualization/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/uav_simulator/local_sensing/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/uav_simulator/mockamap/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/uav_simulator/so3_control/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/uav_simulator/Utils/multi_map_server/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/uav_simulator/Utils/uav_utils/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/uav_simulator/so3_quadrotor_simulator/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/unitree_guide/unitree_ros/unitree_legged_control/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/unitree_guide/unitree_ros_to_real/unitree_legged_real/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/unitree_guide/unitree_guide/unitree_actuator_sdk/unitree_motor_ctrl/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/uav_simulator/Utils/rviz_plugins/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/unitree_guide/unitree_ros/unitree_controller/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/unitree_guide/unitree_ros/unitree_gazebo/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/unitree_guide/unitree_guide/unitree_guide/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/unitree_guide/unitree_guide/unitree_move_base/cmake_install.cmake")
-  include("/home/zhuyihang/SimEnv/build/uav_simulator/Utils/waypoint_generator/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/gtest/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/building_generator_core/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/building_generator_interfaces/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/uav_simulator/Utils/quadrotor_msgs/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/unitree_guide/unitree_ros_to_real/unitree_legged_sdk/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/unitree_guide/unitree_ros/robots/a1_description/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/uav_simulator/Utils/cmake_utils/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/uav_simulator/map_generator/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/uav_simulator/Utils/pose_utils/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/building_obstacles/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/simenv_cbf_train/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/simenv_train/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/building_generator_classic/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/Mid360_imu_sim/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/uav_simulator/Utils/odom_visualization/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/uav_simulator/local_sensing/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/uav_simulator/mockamap/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/uav_simulator/so3_control/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/uav_simulator/Utils/multi_map_server/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/uav_simulator/Utils/uav_utils/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/uav_simulator/so3_quadrotor_simulator/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/unitree_guide/unitree_ros/unitree_legged_control/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/unitree_guide/unitree_ros_to_real/unitree_legged_real/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/unitree_guide/unitree_guide/unitree_actuator_sdk/unitree_motor_ctrl/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/uav_simulator/Utils/rviz_plugins/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/unitree_guide/unitree_ros/unitree_controller/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/unitree_guide/unitree_ros/unitree_gazebo/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/unitree_guide/unitree_guide/unitree_guide/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/unitree_guide/unitree_guide/unitree_move_base/cmake_install.cmake")
+  include("/home/zhuyihang/simEnv/build/uav_simulator/Utils/waypoint_generator/cmake_install.cmake")
 
 endif()
 
@@ -185,5 +192,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/zhuyihang/SimEnv/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zhuyihang/simEnv/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

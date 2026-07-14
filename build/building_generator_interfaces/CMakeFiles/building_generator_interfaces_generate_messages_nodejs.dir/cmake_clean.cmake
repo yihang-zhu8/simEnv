@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/zhuyihang/SimEnv/devel/share/gennodejs/ros/building_generator_interfaces/srv/CallElevator.js"
-  "/home/zhuyihang/SimEnv/devel/share/gennodejs/ros/building_generator_interfaces/srv/SetDoorState.js"
+  "/home/zhuyihang/simEnv/devel/share/gennodejs/ros/building_generator_interfaces/srv/CallElevator.js"
+  "/home/zhuyihang/simEnv/devel/share/gennodejs/ros/building_generator_interfaces/srv/SetDoorState.js"
   "CMakeFiles/building_generator_interfaces_generate_messages_nodejs"
 )
 

@@ -1,4 +1,4 @@
-prefix=/home/zhuyihang/SimEnv/devel
+prefix=/home/zhuyihang/simEnv/devel
 
 Name: local_sensing_node
 Description: Description of local_sensing_node

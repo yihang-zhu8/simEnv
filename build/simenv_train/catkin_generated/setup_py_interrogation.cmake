@@ -1,0 +1,7 @@
+set(simenv_train_SETUP_PY_SETUP_MODULE "setuptools")
+set(simenv_train_SETUP_PY_VERSION "1.0.0")
+set(simenv_train_SETUP_PY_SCRIPTS "")
+set(simenv_train_SETUP_PY_PACKAGES "simenv_train")
+set(simenv_train_SETUP_PY_PACKAGE_DIRS "src/simenv_train")
+set(simenv_train_SETUP_PY_MODULES "")
+set(simenv_train_SETUP_PY_MODULE_DIRS "")

@@ -1,0 +1,8 @@
+prefix=/home/zhuyihang/simEnv/install
+
+Name: simenv_cbf_train
+Description: Description of simenv_cbf_train
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: rospy geometry_msgs sensor_msgs nav_msgs std_msgs

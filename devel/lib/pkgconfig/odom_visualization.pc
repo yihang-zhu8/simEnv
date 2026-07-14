@@ -1,4 +1,4 @@
-prefix=/home/zhuyihang/SimEnv/devel
+prefix=/home/zhuyihang/simEnv/devel
 
 Name: odom_visualization
 Description: Description of odom_visualization

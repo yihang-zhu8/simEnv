@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/zhuyihang/SimEnv/devel/lib/unitree_controller/unitree_external_force"
-  "/home/zhuyihang/SimEnv/devel/lib/unitree_controller/unitree_external_force.pdb"
+  "/home/zhuyihang/simEnv/devel/lib/unitree_controller/unitree_external_force"
+  "/home/zhuyihang/simEnv/devel/lib/unitree_controller/unitree_external_force.pdb"
   "CMakeFiles/unitree_external_force.dir/src/external_force.cpp.o"
+  "CMakeFiles/unitree_external_force.dir/src/external_force.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,8 +1,8 @@
-# Install script for directory: /home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs
+# Install script for directory: /home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zhuyihang/SimEnv/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zhuyihang/simEnv/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,70 +37,75 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_legged_msgs/msg" TYPE FILE FILES
-    "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/MotorCmd.msg"
-    "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/MotorState.msg"
-    "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/BmsCmd.msg"
-    "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/BmsState.msg"
-    "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/Cartesian.msg"
-    "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/IMU.msg"
-    "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/LED.msg"
-    "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/LowCmd.msg"
-    "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/LowState.msg"
-    "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/HighCmd.msg"
-    "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/HighState.msg"
+    "/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/MotorCmd.msg"
+    "/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/MotorState.msg"
+    "/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/BmsCmd.msg"
+    "/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/BmsState.msg"
+    "/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/Cartesian.msg"
+    "/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/IMU.msg"
+    "/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/LED.msg"
+    "/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/LowCmd.msg"
+    "/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/LowState.msg"
+    "/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/HighCmd.msg"
+    "/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/msg/HighState.msg"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_legged_msgs/cmake" TYPE FILE FILES "/home/zhuyihang/SimEnv/build/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/catkin_generated/installspace/unitree_legged_msgs-msg-paths.cmake")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_legged_msgs/cmake" TYPE FILE FILES "/home/zhuyihang/simEnv/build/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/catkin_generated/installspace/unitree_legged_msgs-msg-paths.cmake")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/zhuyihang/SimEnv/devel/include/unitree_legged_msgs")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/zhuyihang/simEnv/devel/include/unitree_legged_msgs")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/zhuyihang/SimEnv/devel/share/roseus/ros/unitree_legged_msgs")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/zhuyihang/simEnv/devel/share/roseus/ros/unitree_legged_msgs")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/zhuyihang/SimEnv/devel/share/common-lisp/ros/unitree_legged_msgs")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/zhuyihang/simEnv/devel/share/common-lisp/ros/unitree_legged_msgs")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/zhuyihang/SimEnv/devel/share/gennodejs/ros/unitree_legged_msgs")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/zhuyihang/simEnv/devel/share/gennodejs/ros/unitree_legged_msgs")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/zhuyihang/SimEnv/devel/lib/python3/dist-packages/unitree_legged_msgs")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/zhuyihang/simEnv/devel/lib/python3/dist-packages/unitree_legged_msgs")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/zhuyihang/SimEnv/devel/lib/python3/dist-packages/unitree_legged_msgs")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/zhuyihang/simEnv/devel/lib/python3/dist-packages/unitree_legged_msgs")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zhuyihang/SimEnv/build/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/catkin_generated/installspace/unitree_legged_msgs.pc")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zhuyihang/simEnv/build/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/catkin_generated/installspace/unitree_legged_msgs.pc")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_legged_msgs/cmake" TYPE FILE FILES "/home/zhuyihang/SimEnv/build/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/catkin_generated/installspace/unitree_legged_msgs-msg-extras.cmake")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_legged_msgs/cmake" TYPE FILE FILES "/home/zhuyihang/simEnv/build/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/catkin_generated/installspace/unitree_legged_msgs-msg-extras.cmake")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_legged_msgs/cmake" TYPE FILE FILES
-    "/home/zhuyihang/SimEnv/build/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/catkin_generated/installspace/unitree_legged_msgsConfig.cmake"
-    "/home/zhuyihang/SimEnv/build/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/catkin_generated/installspace/unitree_legged_msgsConfig-version.cmake"
+    "/home/zhuyihang/simEnv/build/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/catkin_generated/installspace/unitree_legged_msgsConfig.cmake"
+    "/home/zhuyihang/simEnv/build/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/catkin_generated/installspace/unitree_legged_msgsConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_legged_msgs" TYPE FILE FILES "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/package.xml")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/unitree_legged_msgs" TYPE FILE FILES "/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/package.xml")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/unitree_legged_msgs" TYPE DIRECTORY FILES "/home/zhuyihang/SimEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/include/unitree_legged_msgs/" FILES_MATCHING REGEX "/[^/]*\\.h$")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/unitree_legged_msgs" TYPE DIRECTORY FILES "/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros_to_real/unitree_legged_msgs/include/unitree_legged_msgs/" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 

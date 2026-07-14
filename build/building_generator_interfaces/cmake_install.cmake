@@ -1,8 +1,8 @@
-# Install script for directory: /home/zhuyihang/SimEnv/src/building_generator_interfaces
+# Install script for directory: /home/zhuyihang/simEnv/src/building_generator_interfaces
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/zhuyihang/SimEnv/install")
+  set(CMAKE_INSTALL_PREFIX "/home/zhuyihang/simEnv/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,57 +37,62 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/building_generator_interfaces/srv" TYPE FILE FILES
-    "/home/zhuyihang/SimEnv/src/building_generator_interfaces/srv/CallElevator.srv"
-    "/home/zhuyihang/SimEnv/src/building_generator_interfaces/srv/SetDoorState.srv"
+    "/home/zhuyihang/simEnv/src/building_generator_interfaces/srv/CallElevator.srv"
+    "/home/zhuyihang/simEnv/src/building_generator_interfaces/srv/SetDoorState.srv"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/building_generator_interfaces/cmake" TYPE FILE FILES "/home/zhuyihang/SimEnv/build/building_generator_interfaces/catkin_generated/installspace/building_generator_interfaces-msg-paths.cmake")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/building_generator_interfaces/cmake" TYPE FILE FILES "/home/zhuyihang/simEnv/build/building_generator_interfaces/catkin_generated/installspace/building_generator_interfaces-msg-paths.cmake")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/zhuyihang/SimEnv/devel/include/building_generator_interfaces")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/zhuyihang/simEnv/devel/include/building_generator_interfaces")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/zhuyihang/SimEnv/devel/share/roseus/ros/building_generator_interfaces")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/zhuyihang/simEnv/devel/share/roseus/ros/building_generator_interfaces")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/zhuyihang/SimEnv/devel/share/common-lisp/ros/building_generator_interfaces")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/zhuyihang/simEnv/devel/share/common-lisp/ros/building_generator_interfaces")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/zhuyihang/SimEnv/devel/share/gennodejs/ros/building_generator_interfaces")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/zhuyihang/simEnv/devel/share/gennodejs/ros/building_generator_interfaces")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/zhuyihang/SimEnv/devel/lib/python3/dist-packages/building_generator_interfaces")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/zhuyihang/simEnv/devel/lib/python3/dist-packages/building_generator_interfaces")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/zhuyihang/SimEnv/devel/lib/python3/dist-packages/building_generator_interfaces")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/zhuyihang/simEnv/devel/lib/python3/dist-packages/building_generator_interfaces")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zhuyihang/SimEnv/build/building_generator_interfaces/catkin_generated/installspace/building_generator_interfaces.pc")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/zhuyihang/simEnv/build/building_generator_interfaces/catkin_generated/installspace/building_generator_interfaces.pc")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/building_generator_interfaces/cmake" TYPE FILE FILES "/home/zhuyihang/SimEnv/build/building_generator_interfaces/catkin_generated/installspace/building_generator_interfaces-msg-extras.cmake")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/building_generator_interfaces/cmake" TYPE FILE FILES "/home/zhuyihang/simEnv/build/building_generator_interfaces/catkin_generated/installspace/building_generator_interfaces-msg-extras.cmake")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/building_generator_interfaces/cmake" TYPE FILE FILES
-    "/home/zhuyihang/SimEnv/build/building_generator_interfaces/catkin_generated/installspace/building_generator_interfacesConfig.cmake"
-    "/home/zhuyihang/SimEnv/build/building_generator_interfaces/catkin_generated/installspace/building_generator_interfacesConfig-version.cmake"
+    "/home/zhuyihang/simEnv/build/building_generator_interfaces/catkin_generated/installspace/building_generator_interfacesConfig.cmake"
+    "/home/zhuyihang/simEnv/build/building_generator_interfaces/catkin_generated/installspace/building_generator_interfacesConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/building_generator_interfaces" TYPE FILE FILES "/home/zhuyihang/SimEnv/src/building_generator_interfaces/package.xml")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/building_generator_interfaces" TYPE FILE FILES "/home/zhuyihang/simEnv/src/building_generator_interfaces/package.xml")
 endif()
 

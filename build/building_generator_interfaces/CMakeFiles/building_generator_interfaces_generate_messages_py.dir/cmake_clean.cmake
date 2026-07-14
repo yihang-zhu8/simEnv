@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/zhuyihang/SimEnv/devel/lib/python3/dist-packages/building_generator_interfaces/srv/_CallElevator.py"
-  "/home/zhuyihang/SimEnv/devel/lib/python3/dist-packages/building_generator_interfaces/srv/_SetDoorState.py"
-  "/home/zhuyihang/SimEnv/devel/lib/python3/dist-packages/building_generator_interfaces/srv/__init__.py"
+  "/home/zhuyihang/simEnv/devel/lib/python3/dist-packages/building_generator_interfaces/srv/_CallElevator.py"
+  "/home/zhuyihang/simEnv/devel/lib/python3/dist-packages/building_generator_interfaces/srv/_SetDoorState.py"
+  "/home/zhuyihang/simEnv/devel/lib/python3/dist-packages/building_generator_interfaces/srv/__init__.py"
   "CMakeFiles/building_generator_interfaces_generate_messages_py"
 )
 

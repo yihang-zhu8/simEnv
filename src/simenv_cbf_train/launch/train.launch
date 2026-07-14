@@ -1,0 +1,31 @@
+<launch>
+  <!--
+    simenv_cbf_train launch file
+    启动 CBF-PPO 训练节点
+
+    前提：Gazebo + A1 + junior_ctrl 已由 auto.sh 启动
+
+    使用方式：
+      roslaunch simenv_cbf_train train.launch
+      roslaunch simenv_cbf_train train.launch max_iterations:=500
+      roslaunch simenv_cbf_train train.launch fast_mode:=true
+  -->
+  <arg name="max_iterations" default="500" doc="最大训练迭代次数"/>
+  <arg name="num_envs" default="1" doc="并行环境数（ROS 模式下固定为 1）"/>
+  <arg name="fast_mode" default="false" doc="使用快速 2D 环境而非 ROS-Gazebo"/>
+  <arg name="resume" default="false" doc="从检查点恢复训练"/>
+  <arg name="checkpoint" default="" doc="检查点路径"/>
+  <arg name="no_cbf" default="false" doc="禁用 CBF 安全层"/>
+  <arg name="experiment_name" default="simenv_cbf_nav" doc="实验名称"/>
+
+  <node name="simenv_cbf_train" pkg="simenv_cbf_train" type="train.py"
+        output="screen" required="true">
+    <param name="max_iterations" value="$(arg max_iterations)"/>
+    <param name="num_envs" value="$(arg num_envs)"/>
+    <param name="fast_mode" value="$(arg fast_mode)"/>
+    <param name="resume" value="$(arg resume)"/>
+    <param name="checkpoint" value="$(arg checkpoint)"/>
+    <param name="no_cbf" value="$(arg no_cbf)"/>
+    <param name="experiment_name" value="$(arg experiment_name)"/>
+  </node>
+</launch>

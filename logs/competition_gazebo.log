@@ -1,22 +1,1059 @@
 xacro: in-order processing became default in ROS Melodic. You can drop the option.
-[INFO] [1783156909.944379, 0.000000]: Loading model XML from ros parameter robot_description
-[INFO] [1783156909.957054, 0.000000]: Waiting for service /gazebo/spawn_urdf_model
-[INFO] [1783156913.274213, 0.000000]: Calling service /gazebo/spawn_urdf_model
-[INFO] [1783156913.707734, 0.200000]: Spawn status: SpawnModel: Successfully spawned entity
-[INFO] [1783156913.709770, 0.200000]: Waiting for service /gazebo/set_model_configuration
-[INFO] [1783156913.712821, 0.200000]: temporary hack to **fix** the -J joint position option (issue #93), sleeping for 1 second to avoid race condition.
-[INFO] [1783156914.715702, 0.200000]: Calling service /gazebo/set_model_configuration
-[INFO] [1783156914.720284, 0.200000]: Set model configuration status: SetModelConfiguration: success
-[WARN] [1783157953.815358, 740.594000]: Controller Spawner error while taking down controllers: transport error completing service call: unable to receive data from sender, check sender's logs for details
-[31m[a1_gazebo/controller_spawner-6] escalating to SIGTERM[0m
-[31m[gazebo_gui-3] escalating to SIGTERM[0m
-[31m[gazebo-2] escalating to SIGTERM[0m
-... logging to /home/ros/.ros/log/c89b5e8a-7789-11f1-ae44-6550d2d5be87/roslaunch-LAPTOP-4NHCRNJ5-24586.log
+[0m[INFO] [1784010395.994365694]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[INFO] [1784010395.995098210]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[0m[INFO] [1784010396.979002608]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[INFO] [1784010396.992606310]: Physics dynamic reconfigure ready.[0m
+[0m[INFO] [1784010397.352802290]: <initialOrientationAsReference> is unset, using default value of false to comply with REP 145 (world as orientation reference)[0m
+[0m[INFO] [1784010397.352844689]: <robotNamespace> set to: //[0m
+[0m[INFO] [1784010397.352851061]: <topicName> set to: trunk_imu[0m
+[0m[INFO] [1784010397.352855058]: <frameName> set to: imu_link[0m
+[0m[INFO] [1784010397.352879574]: <updateRateHZ> set to: 1000[0m
+[0m[INFO] [1784010397.352886948]: <gaussianNoise> set to: 0[0m
+[0m[INFO] [1784010397.352909460]: <xyzOffset> set to: 0 0 0[0m
+[0m[INFO] [1784010397.352925810]: <rpyOffset> set to: 0 -0 0[0m
+[0m[INFO] [1784010400.902483712]: load csv file name:/home/zhuyihang/simEnv/src/unitree_guide/unitree_ros/robots/a1_description/scan_mode/mid360.csv[0m
+cannot convert str:
+data size:800000
+[INFO] [1784010395.885312, 0.000000]: Loading model XML from ros parameter robot_description
+[INFO] [1784010395.890473, 0.000000]: Waiting for service /gazebo/spawn_urdf_model
+[INFO] [1784010397.097945, 0.000000]: Calling service /gazebo/spawn_urdf_model
+[INFO] [1784010403.812911, 0.000000]: Spawn status: SpawnModel: Successfully spawned entity
+[INFO] [1784010403.814228, 0.000000]: Waiting for service /gazebo/set_model_configuration
+[INFO] [1784010403.816790, 0.000000]: temporary hack to **fix** the -J joint position option (issue #93), sleeping for 1 second to avoid race condition.
+[INFO] [1784010404.819024, 0.000000]: Calling service /gazebo/set_model_configuration
+[INFO] [1784010404.822405, 0.000000]: Set model configuration status: SetModelConfiguration: success
+[0m[INFO] [1784010401.397590772]: ros topic name:/scan[0m
+[0m[INFO] [1784010401.448094192]: scan info size:800000[0m
+[0m[INFO] [1784010401.449151204]: sample:24000[0m
+[0m[INFO] [1784010401.449159740]: downsample:1[0m
+[0m[INFO] [1784010403.797644176]: <initialOrientationAsReference> is unset, using default value of false to comply with REP 145 (world as orientation reference)[0m
+[0m[INFO] [1784010403.797680023]: <robotNamespace> set to: //[0m
+[0m[INFO] [1784010403.797684541]: <topicName> set to: /livox/imu[0m
+[0m[INFO] [1784010403.797688419]: <frameName> set to: livox_imu_link[0m
+[0m[INFO] [1784010403.797700621]: <updateRateHZ> set to: 1000[0m
+[0m[INFO] [1784010403.797705731]: <gaussianNoise> set to: 0[0m
+[0m[INFO] [1784010403.797717012]: <xyzOffset> set to: 0 0 0[0m
+[0m[INFO] [1784010403.797724726]: <rpyOffset> set to: 0 -0 0[0m
+[0m[INFO] [1784010403.912445364]: Camera Plugin: Using the 'robotNamespace' param: '/'[0m
+[0m[INFO] [1784010403.915221424]: Camera Plugin (ns = /)  <tf_prefix_>, set to ""[0m
+[0m[INFO] [1784010404.772403400]: Loading gazebo_ros_control plugin[0m
+[0m[INFO] [1784010404.772467479]: Starting gazebo_ros_control plugin in namespace: /a1_gazebo[0m
+[0m[INFO] [1784010404.772851356]: gazebo_ros_control plugin is waiting for model URDF in parameter [/robot_description] on the ROS param server.[0m
+[0m[INFO] [1784010404.889753935]: Loaded gazebo_ros_control.[0m
+[0m[INFO] [1784010417.181629976, 2.106000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010417.183390060, 2.108000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010608.201334108, 73.384000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010608.203141430, 73.386000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010618.482652514, 77.114000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010618.484272446, 77.116000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010619.494552626, 77.454000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010619.495995518, 77.454000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010619.775329344, 77.552000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010619.777323084, 77.554000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010619.779012797, 77.556000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010619.780814388, 77.558000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010619.793952070, 77.570000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010619.795432633, 77.572000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.065324662, 77.670000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.067130762, 77.672000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.068628447, 77.672000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.074379467, 77.678000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.092912366, 77.698000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.094470834, 77.698000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.371603944, 77.798000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.373896361, 77.800000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.375320959, 77.802000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.376631835, 77.804000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.486362513, 77.822000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.492214642, 77.828000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.494153018, 77.830000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.495895750, 77.832000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.594862334, 77.850000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.596749255, 77.852000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.865766181, 77.950000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.867541273, 77.952000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.868682903, 77.952000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.870814971, 77.956000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.895329231, 77.980000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010620.897302272, 77.982000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.164729042, 78.080000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.166972357, 78.082000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.168362040, 78.084000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.169274102, 78.084000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.192079062, 78.108000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.194582533, 78.110000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.469100373, 78.210000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.470902586, 78.212000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.565266672, 78.216000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.567602621, 78.218000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.569138376, 78.220000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.571384357, 78.222000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.670564469, 78.244000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.673035660, 78.246000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.694532068, 78.268000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.695985169, 78.268000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.959224446, 78.366000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.961409763, 78.368000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.963053701, 78.370000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.964686958, 78.372000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.994105568, 78.402000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010621.995541287, 78.402000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010622.261597990, 78.500000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010622.263207644, 78.502000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010622.264667798, 78.502000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010622.267163334, 78.506000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010622.390537829, 78.534000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010622.470817656, 78.536000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010622.473344441, 78.538000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010622.475259664, 78.540000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010622.491945898, 78.556000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010622.494340325, 78.560000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010622.765260613, 78.660000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010622.767427356, 78.662000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010622.768544511, 78.662000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010622.769873170, 78.664000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010622.793428750, 78.688000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010622.795481651, 78.690000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.065090992, 78.788000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.066940744, 78.790000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.068048591, 78.790000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.069804327, 78.792000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.184266292, 78.816000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.186717666, 78.818000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.197627151, 78.828000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.199482042, 78.832000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.465746814, 78.926000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.467610401, 78.928000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.469257845, 78.930000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.475612110, 78.932000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.559015666, 78.934000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.561037228, 78.936000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.594124242, 78.970000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.595347435, 78.970000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.859630980, 79.068000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.861411382, 79.070000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.862899649, 79.070000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.863865451, 79.072000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.893492520, 79.102000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010623.895232666, 79.102000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.168178544, 79.200000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.170176983, 79.202000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.172023047, 79.204000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.173324655, 79.206000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.288897183, 79.226000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.295017482, 79.230000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.380489177, 79.236000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.382172247, 79.238000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.392703998, 79.248000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.393688044, 79.250000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.667215777, 79.350000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.668899408, 79.352000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.670564625, 79.352000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.671777819, 79.354000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.696671415, 79.378000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.699249877, 79.382000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.969196257, 79.480000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.971713905, 79.482000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.973159202, 79.484000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.974115406, 79.484000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.993159148, 79.504000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010624.995486450, 79.506000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010625.265079402, 79.604000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010625.266855065, 79.606000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010625.268196267, 79.606000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010625.269218134, 79.608000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010625.387623687, 79.632000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010625.466151035, 79.634000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010625.468055218, 79.636000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010625.469460189, 79.638000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010625.493058590, 79.660000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010625.494487896, 79.662000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010625.768702431, 79.762000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010625.770376845, 79.764000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010625.772011585, 79.766000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010625.773949491, 79.766000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010625.794072758, 79.788000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010625.795835436, 79.788000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.056434887, 79.886000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.058463493, 79.888000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.059957891, 79.888000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.061847908, 79.890000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.185328340, 79.922000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.187106227, 79.922000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.197185292, 79.932000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.199117818, 79.934000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.466685461, 80.032000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.547717642, 80.034000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.549995171, 80.036000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.551481735, 80.038000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.552726407, 80.040000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.553889898, 80.040000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.596578838, 80.084000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.599416923, 80.086000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.869600968, 80.180000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.871978233, 80.182000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.875904690, 80.186000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.877658753, 80.188000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.892581345, 80.202000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010626.893981237, 80.204000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.165221092, 80.304000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.167445883, 80.306000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.168853359, 80.308000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.170630745, 80.310000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.288277332, 80.334000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.367933917, 80.336000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.369816469, 80.338000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.371477478, 80.340000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.392687232, 80.362000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.395020806, 80.364000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.664280366, 80.464000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.666198084, 80.466000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.668406484, 80.468000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.669964080, 80.470000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.695085603, 80.494000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.697198906, 80.496000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.963034156, 80.592000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.965671748, 80.594000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.967052574, 80.596000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010627.968073819, 80.596000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.081659520, 80.622000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.087814093, 80.628000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.092802831, 80.632000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.174457444, 80.634000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.194722394, 80.654000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.196650823, 80.656000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.469326055, 80.754000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.471196745, 80.756000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.473332430, 80.758000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.474754173, 80.760000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.498086246, 80.782000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.500221841, 80.784000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.763781435, 80.880000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.766785570, 80.884000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.768691637, 80.886000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.769788693, 80.886000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.792790451, 80.910000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.795343835, 80.912000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.895522530, 80.916000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010628.898244369, 80.920000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.163576931, 81.016000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.165559069, 81.018000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.167801784, 81.020000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.169049662, 81.022000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.273359115, 81.048000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.275189159, 81.050000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.294637286, 81.070000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.297219364, 81.072000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.564571765, 81.168000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.566448126, 81.170000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.567649768, 81.170000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.568742447, 81.172000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.594286477, 81.198000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.595973565, 81.198000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.862828968, 81.298000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.865357086, 81.300000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.866719337, 81.302000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.867731817, 81.302000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010629.990092549, 81.330000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.069432413, 81.334000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.071743425, 81.336000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.072917746, 81.338000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.093596970, 81.358000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.095017209, 81.360000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.362870726, 81.460000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.364815634, 81.462000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.367059160, 81.464000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.369533698, 81.468000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.393805144, 81.492000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.395554598, 81.494000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.662230597, 81.592000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.664265454, 81.594000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.666071774, 81.596000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.668005903, 81.598000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.788749919, 81.624000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.794961999, 81.630000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.796883545, 81.632000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.878348193, 81.634000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.893583840, 81.648000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010630.895075343, 81.650000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.169007761, 81.750000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.170464299, 81.752000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.171854012, 81.752000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.173508649, 81.754000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.192554545, 81.774000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.197515612, 81.778000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.464739303, 81.874000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.470471358, 81.880000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.471853987, 81.880000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.473029972, 81.882000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.494000389, 81.904000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.495872081, 81.904000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.766347930, 82.004000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.767811611, 82.004000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.769040384, 82.006000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.770370956, 82.008000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.888393465, 82.030000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.968998349, 82.032000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.971671226, 82.034000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.973231247, 82.036000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.992257406, 82.054000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010631.993509622, 82.056000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.264215590, 82.156000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.265724916, 82.158000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.267733063, 82.160000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.269477728, 82.162000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.293028049, 82.184000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.295165417, 82.188000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.560250388, 82.286000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.563409021, 82.290000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.565111838, 82.290000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.566521168, 82.292000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.689404856, 82.320000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.691425376, 82.322000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.693009151, 82.324000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.698095051, 82.328000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.965141691, 82.424000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.967257449, 82.426000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.973032164, 82.432000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010632.975122444, 82.434000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.055771571, 82.438000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.057628215, 82.440000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.096931247, 82.480000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.099654829, 82.482000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.369296541, 82.578000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.372354527, 82.580000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.373905040, 82.582000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.375030269, 82.582000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.393623481, 82.602000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.395316529, 82.602000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.665621509, 82.702000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.668202926, 82.704000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.670598887, 82.706000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.672585754, 82.708000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.794154840, 82.732000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.796943062, 82.734000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.798493755, 82.736000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.800032096, 82.738000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.893116173, 82.756000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010633.895000108, 82.756000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.163153584, 82.856000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.164921453, 82.858000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.166298352, 82.858000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.167562270, 82.860000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.193426979, 82.886000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.194910076, 82.888000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.470946851, 82.988000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.472564158, 82.988000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.474019123, 82.990000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.475107704, 82.992000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.495358388, 83.012000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.592168057, 83.014000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.593627260, 83.016000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.595392904, 83.018000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.867208403, 83.116000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.869591489, 83.118000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.871461438, 83.120000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.872694138, 83.122000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.971000751, 83.144000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.972651290, 83.146000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.994322355, 83.166000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010634.996300345, 83.168000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010635.260485937, 83.266000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010635.262616172, 83.268000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010635.264206369, 83.270000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010635.265786968, 83.272000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010635.294495032, 83.300000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010635.296539276, 83.302000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010635.565488827, 83.400000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010635.567439317, 83.400000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010635.569564933, 83.404000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010635.571476339, 83.404000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010635.689918200, 83.432000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010635.777361754, 83.434000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010635.779500424, 83.436000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010635.781008689, 83.438000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010635.793369181, 83.450000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010635.794681840, 83.452000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.068821355, 83.552000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.070932774, 83.554000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.072915584, 83.556000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.074194630, 83.556000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.096400342, 83.580000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.098762229, 83.582000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.364414558, 83.678000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.369441227, 83.684000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.371802643, 83.686000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.373687820, 83.688000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.393368441, 83.708000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.395259479, 83.710000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.495244162, 83.714000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.496624718, 83.714000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.671280985, 83.810000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.770497996, 83.814000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.772963987, 83.816000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.773963332, 83.816000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.870583758, 83.836000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.872476269, 83.838000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.894653889, 83.860000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010636.896629946, 83.862000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.170046652, 83.960000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.172797113, 83.962000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.175073942, 83.966000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.176790755, 83.966000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.193503788, 83.984000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.195597835, 83.986000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.478965398, 84.084000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.481330751, 84.088000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.482394396, 84.088000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.483900035, 84.090000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.492604817, 84.098000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.493989129, 84.100000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.762256608, 84.200000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.764133099, 84.202000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.765537760, 84.202000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.767326207, 84.204000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.888576768, 84.232000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.970350984, 84.232000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.972638432, 84.236000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.974572761, 84.238000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.994497287, 84.258000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010637.995956399, 84.258000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010638.256947301, 84.356000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010638.259342430, 84.358000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010638.260961381, 84.360000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010638.262069438, 84.360000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010638.293221151, 84.392000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010638.294756246, 84.394000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010638.566843802, 84.492000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010638.568842441, 84.494000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010638.570095689, 84.496000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010638.571023621, 84.498000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010638.686359136, 84.520000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010638.687605892, 84.522000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010638.695630885, 84.530000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010638.697573700, 84.532000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010638.792886897, 84.550000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010638.794726299, 84.552000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.068398982, 84.652000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.069995041, 84.654000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.072555969, 84.656000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.073817643, 84.656000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.095877673, 84.678000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.099105736, 84.682000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.379356392, 84.780000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.381734069, 84.782000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.383741615, 84.784000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.385335128, 84.786000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.391511141, 84.792000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.393357356, 84.794000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.667563976, 84.894000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.668931928, 84.894000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.670284382, 84.896000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.672272441, 84.898000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.788824706, 84.920000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.790569532, 84.922000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.794066296, 84.924000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010639.799533216, 84.930000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.067966594, 85.024000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.074072146, 85.030000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.076885576, 85.034000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.164087298, 85.038000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.166278587, 85.040000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.167494996, 85.042000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.194001372, 85.068000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.195393540, 85.068000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.463826136, 85.166000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.465927607, 85.168000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.467306670, 85.170000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.468730507, 85.170000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.493550076, 85.196000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.494958434, 85.198000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.764122214, 85.298000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.766251557, 85.300000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.768001883, 85.302000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.769473619, 85.304000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.886014814, 85.332000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.965384483, 85.334000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.967268338, 85.336000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.969014336, 85.338000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.995480717, 85.364000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010640.997579724, 85.366000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010641.259212103, 85.462000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010641.261044291, 85.464000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010641.262657631, 85.466000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010641.264019041, 85.466000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010641.292780736, 85.496000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010641.295094142, 85.498000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010641.567086691, 85.598000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010641.568865399, 85.600000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010641.570099863, 85.600000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010641.571372738, 85.602000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010641.690541174, 85.628000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010641.692930943, 85.632000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010641.775135792, 85.636000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010641.777393665, 85.638000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010641.791821084, 85.652000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010641.793560570, 85.654000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.062902804, 85.754000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.065215198, 85.756000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.066505015, 85.758000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.067681640, 85.758000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.092970194, 85.784000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.095439761, 85.786000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.359897171, 85.884000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.361731844, 85.886000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.363235049, 85.888000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.364849050, 85.890000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.487554597, 85.920000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.493494850, 85.924000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.496014962, 85.928000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.498323640, 85.930000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.768820728, 86.030000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.771223742, 86.032000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.850514464, 86.036000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.852563387, 86.038000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.855059254, 86.040000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.856668366, 86.042000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.897906248, 86.084000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010642.900429587, 86.086000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.163186173, 86.180000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.164627532, 86.182000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.165890158, 86.184000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.167857228, 86.184000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.194293173, 86.210000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.288520694, 86.214000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.293914117, 86.220000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.296081271, 86.222000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.566059681, 86.320000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.567882452, 86.322000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.569661021, 86.324000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.575036040, 86.328000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.667488580, 86.346000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.669898446, 86.348000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.693825349, 86.372000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.696068435, 86.374000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.971153153, 86.472000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.977151915, 86.478000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.979433312, 86.480000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.981278054, 86.482000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.992236931, 86.492000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010643.993769430, 86.494000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010644.269579572, 86.594000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010644.271737578, 86.596000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010644.273590947, 86.598000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010644.275130149, 86.600000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010644.398377746, 86.620000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010644.400537546, 86.622000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010644.401634262, 86.622000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010644.402521608, 86.624000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010644.669756420, 86.716000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010644.672519475, 86.720000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010645.755634591, 87.118000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010645.757201836, 87.120000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.022329856, 87.216000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.024487713, 87.218000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.026262123, 87.220000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.028431000, 87.222000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.130044702, 87.248000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.131594344, 87.248000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.154279681, 87.272000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.155738433, 87.274000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.426212508, 87.372000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.428539951, 87.374000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.433437869, 87.378000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.435381846, 87.380000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.453882716, 87.400000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.455829208, 87.402000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.727051810, 87.500000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.729625973, 87.502000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.731713417, 87.504000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.733528204, 87.506000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.849037703, 87.526000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.855232922, 87.532000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.856551863, 87.534000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.934898444, 87.536000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.953559452, 87.554000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010646.954590145, 87.556000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010647.223626838, 87.656000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010647.225241151, 87.658000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010647.226907179, 87.658000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010647.228125232, 87.660000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010647.254589199, 87.686000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010647.256510543, 87.688000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010647.522024384, 87.786000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010647.523978600, 87.788000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010647.525684062, 87.790000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010647.527031396, 87.790000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010647.644230188, 87.818000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010647.646033803, 87.820000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010647.654076840, 87.828000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010647.656049842, 87.830000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010647.754436613, 87.850000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010647.755803013, 87.850000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.029044872, 87.950000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.031721206, 87.952000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.034344240, 87.954000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.036240708, 87.956000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.055942980, 87.976000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.057789325, 87.978000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.326315506, 88.074000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.333742924, 88.082000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.336973491, 88.084000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.338453012, 88.086000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.353677087, 88.102000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.355429808, 88.102000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.627364429, 88.200000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.628997576, 88.202000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.630739656, 88.204000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.631666826, 88.204000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.774366127, 88.226000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.776781704, 88.230000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.778160997, 88.230000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.779919919, 88.232000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.931207795, 88.306000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010648.933584079, 88.308000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.079626307, 88.328000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.081802798, 88.332000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.084145288, 88.334000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.085461855, 88.334000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.229224240, 88.402000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.230786434, 88.402000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.355845071, 88.430000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.358189826, 88.432000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.440191746, 88.434000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.442061165, 88.436000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.452993503, 88.446000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.454872699, 88.448000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.720852890, 88.548000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.723052043, 88.550000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.724529189, 88.552000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.726077067, 88.552000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.755669471, 88.582000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010649.757677588, 88.584000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.052618123, 88.682000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.054526484, 88.684000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.056454080, 88.684000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.057562128, 88.684000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.058575789, 88.686000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.059989196, 88.686000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.349313934, 88.780000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.350979372, 88.782000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.352231107, 88.784000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.353222467, 88.784000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.354224266, 88.786000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.355169460, 88.786000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.653066011, 88.886000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.654699789, 88.888000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.655793359, 88.888000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.656785471, 88.890000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.658021136, 88.890000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.658960869, 88.892000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.919838009, 88.988000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.922184337, 88.990000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.923731964, 88.992000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010650.924816458, 88.994000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.044019249, 89.024000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.051042172, 89.030000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.054415907, 89.034000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.135189275, 89.036000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.154744322, 89.056000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.156921784, 89.058000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.444263802, 89.156000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.446177773, 89.158000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.447662023, 89.160000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.449003866, 89.160000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.452564880, 89.164000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.454146742, 89.166000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.751415512, 89.266000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.753526380, 89.268000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.754654174, 89.268000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.755776588, 89.270000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.756792103, 89.270000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010651.757782411, 89.272000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.053905974, 89.368000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.055659285, 89.370000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.057317018, 89.372000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.058715007, 89.372000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.060111192, 89.374000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.062241436, 89.376000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.321466714, 89.468000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.323263396, 89.470000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.324403824, 89.472000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.325718377, 89.472000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.353687762, 89.500000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.355585203, 89.502000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.625739962, 89.600000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.628154608, 89.602000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.629954737, 89.604000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.631555022, 89.606000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.746252637, 89.632000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.749404278, 89.634000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.751592931, 89.636000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010652.753269169, 89.638000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.094988996, 89.738000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.096686994, 89.740000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.098168949, 89.742000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.099473934, 89.744000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.100600857, 89.744000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.101972716, 89.746000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.153696493, 89.798000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.156141105, 89.800000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.419386523, 89.898000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.421570167, 89.900000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.423500168, 89.902000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.425177057, 89.904000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.622186491, 89.934000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.623749166, 89.934000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.625049543, 89.936000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.626454644, 89.938000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.654203709, 89.966000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.655604743, 89.966000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.918809255, 90.064000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.921066387, 90.066000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.922528845, 90.068000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.923778517, 90.068000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.952508993, 90.098000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010653.954818001, 90.100000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010654.222742850, 90.200000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010654.224640962, 90.202000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010654.226012721, 90.204000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010654.227400370, 90.204000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010654.347391602, 90.234000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010654.350254804, 90.236000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010654.431783793, 90.238000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010654.433928534, 90.240000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010654.452584884, 90.258000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010654.454463659, 90.260000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010654.720345196, 90.360000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010654.722496921, 90.362000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010654.723927119, 90.364000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010654.725226514, 90.364000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010654.753765021, 90.392000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010654.755958223, 90.396000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.020570111, 90.494000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.022237442, 90.496000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.023431209, 90.496000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.024479425, 90.498000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.149673024, 90.532000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.152147110, 90.534000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.153986823, 90.536000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.235787658, 90.538000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.252732955, 90.554000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.254455489, 90.556000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.516505126, 90.656000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.518906076, 90.658000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.521272120, 90.660000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.523278714, 90.662000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.554571531, 90.694000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.556818103, 90.696000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.827292739, 90.794000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.828778682, 90.794000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.830248384, 90.796000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.831730519, 90.798000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.944754952, 90.820000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.946566392, 90.822000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010655.959361706, 90.834000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.041111276, 90.836000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.054554158, 90.850000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.056271482, 90.852000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.330298797, 90.950000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.332122981, 90.950000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.333533713, 90.952000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.334873162, 90.954000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.358637723, 90.976000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.360549830, 90.980000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.625743393, 91.074000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.627969076, 91.076000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.629311792, 91.078000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.630884265, 91.078000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.653678295, 91.102000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.656127264, 91.104000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.924038788, 91.202000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.925803531, 91.204000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.927060366, 91.206000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010656.928423720, 91.206000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.047289221, 91.234000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.129409413, 91.236000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.131258313, 91.238000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.133193033, 91.240000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.154793475, 91.262000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.157192110, 91.264000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.426586020, 91.362000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.428380438, 91.364000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.429660667, 91.366000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.430766851, 91.366000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.453116351, 91.388000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.454121056, 91.390000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.721854408, 91.490000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.724181991, 91.492000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.726066356, 91.494000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.727587785, 91.496000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.844451822, 91.522000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.845841325, 91.524000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.857166856, 91.534000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.938507813, 91.536000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.954143377, 91.552000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010657.955956620, 91.554000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010658.222637999, 91.652000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010658.224378867, 91.654000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010658.225678532, 91.654000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010658.226635698, 91.656000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010658.254554269, 91.684000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010658.257265337, 91.686000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010658.519278266, 91.782000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010658.522483937, 91.786000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010658.524301468, 91.788000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010658.525799724, 91.788000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010658.642606995, 91.816000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010658.644474149, 91.818000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010658.658069405, 91.830000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010658.737043496, 91.832000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010658.754633396, 91.848000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010658.756168189, 91.848000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.025021741, 91.946000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.026772738, 91.948000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.027999167, 91.950000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.029612737, 91.950000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.052328421, 91.974000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.054380029, 91.976000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.325388461, 92.076000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.331764287, 92.082000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.334317571, 92.086000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.335737360, 92.086000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.352138172, 92.104000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.354759272, 92.106000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.627273184, 92.206000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.629624090, 92.208000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.631308212, 92.210000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.632627624, 92.210000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.749786942, 92.232000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.829633972, 92.236000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.831630277, 92.238000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.833575306, 92.240000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.853499731, 92.260000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010659.855744730, 92.262000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.120524992, 92.360000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.122028567, 92.360000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.123164066, 92.362000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.124731030, 92.364000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.154393264, 92.394000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.155572364, 92.394000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.419418453, 92.492000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.421897869, 92.494000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.423448562, 92.496000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.425434177, 92.498000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.547570150, 92.530000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.549748134, 92.532000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.552324011, 92.534000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.630838034, 92.538000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.654138468, 92.560000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.655287161, 92.562000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.926649925, 92.662000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.928007858, 92.662000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.929340194, 92.664000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.930519885, 92.666000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.954828000, 92.690000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010660.957099388, 92.692000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010661.221871956, 92.790000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010661.223529869, 92.792000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010661.225903868, 92.794000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010661.227097155, 92.794000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010661.345567770, 92.822000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010661.347811316, 92.824000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010661.351968151, 92.828000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010661.357445221, 92.830000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010661.455210954, 92.854000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010661.457745032, 92.856000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010661.718743418, 92.952000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010661.720337923, 92.952000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010661.721460618, 92.954000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010661.722543648, 92.954000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010661.754138539, 92.986000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010661.756009680, 92.988000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.018646793, 93.086000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.020524717, 93.088000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.022162863, 93.090000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.023488737, 93.092000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.142519076, 93.122000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.144923312, 93.124000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.157885788, 93.134000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.234580446, 93.136000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.254117128, 93.156000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.256289050, 93.158000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.526608838, 93.256000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.528250601, 93.258000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.530288474, 93.260000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.531558343, 93.260000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.552536554, 93.282000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.553736513, 93.282000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.828009136, 93.386000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.829842767, 93.388000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.830828897, 93.388000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.831825737, 93.390000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.853851493, 93.412000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.856191339, 93.414000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.953530646, 93.420000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010662.955450458, 93.422000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.221950499, 93.520000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.223860333, 93.522000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.225065812, 93.524000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.233269228, 93.532000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.335072805, 93.554000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.336733594, 93.556000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.353772526, 93.572000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.354924886, 93.574000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.622651485, 93.674000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.629438749, 93.680000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.631497069, 93.682000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.633150955, 93.684000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.655093115, 93.706000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.657571379, 93.708000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.926889688, 93.804000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.929242508, 93.806000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.930807278, 93.808000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010663.932114727, 93.810000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.047727379, 93.834000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.050380349, 93.836000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.128916333, 93.838000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.132023641, 93.840000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.152439593, 93.860000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.154295095, 93.862000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.427455783, 93.962000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.429228381, 93.964000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.431323400, 93.966000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.432651969, 93.968000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.454546800, 93.990000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.455946502, 93.990000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.715907362, 94.088000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.717682083, 94.090000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.719058612, 94.090000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.720480204, 94.092000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.846455842, 94.126000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.852673513, 94.132000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.854645181, 94.134000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.856119622, 94.136000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.953360006, 94.156000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010664.955486643, 94.158000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010665.222022381, 94.256000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010665.224332241, 94.258000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010665.225912810, 94.260000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010665.228082889, 94.262000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010665.253521302, 94.288000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010665.255472132, 94.290000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010665.519728175, 94.388000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010665.521352667, 94.390000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010665.522713286, 94.392000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010665.524294085, 94.394000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010665.646286050, 94.424000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010665.652755821, 94.430000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010665.654893620, 94.432000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010665.735865018, 94.434000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010665.753067194, 94.452000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010665.754869948, 94.452000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.020031701, 94.554000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.021778631, 94.556000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.022889704, 94.556000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.024353295, 94.558000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.054137416, 94.588000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.055891008, 94.590000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.326706361, 94.688000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.329058068, 94.690000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.331168326, 94.692000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.332933489, 94.694000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.448799023, 94.716000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.450453280, 94.718000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.452202203, 94.720000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.452926284, 94.720000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.720109038, 94.822000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.721763415, 94.824000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.723198653, 94.824000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.731447775, 94.832000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.814051669, 94.838000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.816247606, 94.840000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.857303118, 94.882000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010666.858817644, 94.882000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.130868111, 94.980000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.133131384, 94.984000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.134479749, 94.984000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.135645544, 94.986000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.152721775, 95.002000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.153784498, 95.004000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.423812481, 95.104000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.425321597, 95.106000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.426826926, 95.106000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.428889064, 95.108000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.548021744, 95.134000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.550024140, 95.136000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.551337751, 95.138000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.631701635, 95.140000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.653024530, 95.162000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.654171019, 95.162000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.918408969, 95.262000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.919579643, 95.262000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.920652815, 95.264000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.921895644, 95.266000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.953991890, 95.298000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010667.955767613, 95.298000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010668.215604081, 95.396000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010668.217865931, 95.398000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010668.219523664, 95.400000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010668.220785308, 95.402000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010668.348680437, 95.434000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010668.427675558, 95.436000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010668.429695447, 95.438000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010668.432026135, 95.440000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010668.452446737, 95.460000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010668.454021916, 95.462000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010668.720272240, 95.562000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010668.721740329, 95.562000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010668.722949265, 95.564000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010668.724000416, 95.564000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010668.753683439, 95.594000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010668.755459193, 95.596000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.020089114, 95.694000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.021263074, 95.696000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.023225837, 95.698000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.024197660, 95.698000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.146276797, 95.732000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.227097845, 95.734000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.228883126, 95.736000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.230261788, 95.738000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.254549465, 95.762000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.255741499, 95.762000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.519284682, 95.860000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.520861795, 95.862000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.521906454, 95.862000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.523030401, 95.864000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.554410721, 95.894000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.555613485, 95.896000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.820949925, 95.994000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.822741267, 95.996000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.824266934, 95.998000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.825351738, 95.998000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.949313778, 96.032000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.951551634, 96.034000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010669.953010015, 96.036000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010670.030818822, 96.038000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010670.053069929, 96.060000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010670.054986855, 96.062000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010670.323293096, 96.162000000]: Updating LinkState: reference_frame is empty/world/map, using inertial frame[0m
+[0m[INFO] [1784010670.325336328Killed
+[INFO] [1784010395.816237, 0.000000]: Blind range : 0.5 m
+[INFO] [1784010395.818041, 0.000000]: Angle filter : -7 ~ 55 deg
+[INFO] [1784010395.818680, 0.000000]: Use ground-truth odom for /livox/Pointcloud2: True
+[INFO] [1784010395.820474, 0.000000]: === Pointcloud2livox STARTED ===
+[INFO] [1784010395.820797, 0.000000]: Local sensor frame: laser_livox
+[INFO] [1784010395.821172, 0.000000]: Odom topic : /Odometry_gazebo
+[WARN] [1784015316.016391, 262.464000]: Controller Spawner error while taking down controllers: unable to connect to service: [Errno 111] Connection refused
+[31mWARNING: disk usage in log directory [/home/zhuyihang/.ros/log] is over 1GB.
+It's recommended that you use the 'rosclean' command.[0m
+[31m[gazebo-2] process has died [pid 56998, exit code 137, cmd /opt/ros/noetic/lib/gazebo_ros/gzserver -u -e ode /home/zhuyihang/simEnv/generated_building/competition_scene.world __name:=gazebo __log:=/home/zhuyihang/.ros/log/f5fdb498-7f4c-11f1-b812-5f626bec34ca/gazebo-2.log].
+log file: /home/zhuyihang/.ros/log/f5fdb498-7f4c-11f1-b812-5f626bec34ca/gazebo-2*.log[0m
+... logging to /home/zhuyihang/.ros/log/f5fdb498-7f4c-11f1-b812-5f626bec34ca/roslaunch-zhuyihang-TX-Gaming-FA608FM-FA608FM-56802.log
 Checking log directory for disk usage. This may take a while.
 Press Ctrl-C to interrupt
-Done checking log file disk usage. Usage is <1GB.
-]2;/home/ros/Guoyulun/Competition/SimEnv/src/unitree_guide/unitree_guide/unitree_guide/launch/multi_floor_gazeboSim.launch
-[1mstarted roslaunch server http://LAPTOP-4NHCRNJ5:35407/[0m
+]2;/home/zhuyihang/simEnv/src/unitree_guide/unitree_guide/unitree_guide/launch/multi_floor_gazeboSim.launch
+[1mstarted roslaunch server http://zhuyihang-TX-Gaming-FA608FM-FA608FM:39269/[0m
 
 SUMMARY
 ========
@@ -85,18 +1122,22 @@ PARAMETERS
  * /a1_gazebo/joint_state_controller/publish_rate: 1000
  * /a1_gazebo/joint_state_controller/type: joint_state_contr...
  * /gazebo/enable_ros_network: True
+ * /pointcloud2livox/laser_blind: 0.5
+ * /pointcloud2livox/max_angle: 55
+ * /pointcloud2livox/min_angle: -7
+ * /pointcloud2livox/use_ground_truth_odom: True
  * /robot_description: <?xml version="1....
  * /robot_name: a1
  * /rosdistro: noetic
  * /rosversion: 1.17.4
  * /state_from_gazebo/robot_name: a1
  * /use_sim_time: True
- * /world_file: /home/ros/Guoyulu...
+ * /world_file: /home/zhuyihang/s...
 
 NODES
   /
     gazebo (gazebo_ros/gzserver)
-    gazebo_gui (gazebo_ros/gzclient)
+    pointcloud2livox (unitree_guide/pointcloud2livox.py)
     robot_state_publisher (robot_state_publisher/robot_state_publisher)
     state_from_gazebo (unitree_guide/state_from_gazebo)
     urdf_spawner (gazebo_ros/spawn_model)
@@ -104,25 +1145,24 @@ NODES
     controller_spawner (controller_manager/spawner)
 
 auto-starting new master
-[1mprocess[master]: started with pid [24628][0m
+[1mprocess[master]: started with pid [56947][0m
 [1mROS_MASTER_URI=http://localhost:11311[0m
-]2;/home/ros/Guoyulun/Competition/SimEnv/src/unitree_guide/unitree_guide/unitree_guide/launch/multi_floor_gazeboSim.launch http://localhost:11311
-[1msetting /run_id to c89b5e8a-7789-11f1-ae44-6550d2d5be87[0m
-[1mprocess[rosout-1]: started with pid [24641][0m
+]2;/home/zhuyihang/simEnv/src/unitree_guide/unitree_guide/unitree_guide/launch/multi_floor_gazeboSim.launch http://localhost:11311
+[1msetting /run_id to f5fdb498-7f4c-11f1-b812-5f626bec34ca[0m
+[1mprocess[rosout-1]: started with pid [56991][0m
 started core service [/rosout]
-[1mprocess[gazebo-2]: started with pid [24648][0m
-[1mprocess[gazebo_gui-3]: started with pid [24651][0m
-[1mprocess[urdf_spawner-4]: started with pid [24658][0m
-[1mprocess[state_from_gazebo-5]: started with pid [24659][0m
-[1mprocess[a1_gazebo/controller_spawner-6]: started with pid [24660][0m
-[1mprocess[robot_state_publisher-7]: started with pid [24665][0m
-[1m[urdf_spawner-4] process has finished cleanly
-log file: /home/ros/.ros/log/c89b5e8a-7789-11f1-ae44-6550d2d5be87/urdf_spawner-4*.log[0m
-[robot_state_publisher-7] killing on exit
-[a1_gazebo/controller_spawner-6] killing on exit
-[state_from_gazebo-5] killing on exit
-[gazebo_gui-3] killing on exit
-[gazebo-2] killing on exit
+[1mprocess[gazebo-2]: started with pid [56998][0m
+[1mprocess[urdf_spawner-3]: started with pid [57003][0m
+[1mprocess[state_from_gazebo-4]: started with pid [57004][0m
+[1mprocess[a1_gazebo/controller_spawner-5]: started with pid [57005][0m
+[1mprocess[robot_state_publisher-6]: started with pid [57006][0m
+[1mprocess[pointcloud2livox-7]: started with pid [57011][0m
+[1m[urdf_spawner-3] process has finished cleanly
+log file: /home/zhuyihang/.ros/log/f5fdb498-7f4c-11f1-b812-5f626bec34ca/urdf_spawner-3*.log[0m
+[pointcloud2livox-7] killing on exit
+[robot_state_publisher-6] killing on exit
+[a1_gazebo/controller_spawner-5] killing on exit
+[state_from_gazebo-4] killing on exit
 [rosout-1] killing on exit
 [master] killing on exit
 shutting down processing monitor...

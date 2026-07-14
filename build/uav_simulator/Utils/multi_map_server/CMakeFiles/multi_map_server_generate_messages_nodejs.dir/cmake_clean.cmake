@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "/home/zhuyihang/SimEnv/devel/share/gennodejs/ros/multi_map_server/msg/MultiOccupancyGrid.js"
-  "/home/zhuyihang/SimEnv/devel/share/gennodejs/ros/multi_map_server/msg/MultiSparseMap3D.js"
-  "/home/zhuyihang/SimEnv/devel/share/gennodejs/ros/multi_map_server/msg/SparseMap3D.js"
-  "/home/zhuyihang/SimEnv/devel/share/gennodejs/ros/multi_map_server/msg/VerticalOccupancyGridList.js"
+  "/home/zhuyihang/simEnv/devel/share/gennodejs/ros/multi_map_server/msg/MultiOccupancyGrid.js"
+  "/home/zhuyihang/simEnv/devel/share/gennodejs/ros/multi_map_server/msg/MultiSparseMap3D.js"
+  "/home/zhuyihang/simEnv/devel/share/gennodejs/ros/multi_map_server/msg/SparseMap3D.js"
+  "/home/zhuyihang/simEnv/devel/share/gennodejs/ros/multi_map_server/msg/VerticalOccupancyGridList.js"
   "CMakeFiles/multi_map_server_generate_messages_nodejs"
 )
 

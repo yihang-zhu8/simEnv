@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/zhuyihang/SimEnv/devel/share/roseus/ros/building_generator_interfaces/manifest.l"
-  "/home/zhuyihang/SimEnv/devel/share/roseus/ros/building_generator_interfaces/srv/CallElevator.l"
-  "/home/zhuyihang/SimEnv/devel/share/roseus/ros/building_generator_interfaces/srv/SetDoorState.l"
+  "/home/zhuyihang/simEnv/devel/share/roseus/ros/building_generator_interfaces/manifest.l"
+  "/home/zhuyihang/simEnv/devel/share/roseus/ros/building_generator_interfaces/srv/CallElevator.l"
+  "/home/zhuyihang/simEnv/devel/share/roseus/ros/building_generator_interfaces/srv/SetDoorState.l"
   "CMakeFiles/building_generator_interfaces_generate_messages_eus"
 )
 
